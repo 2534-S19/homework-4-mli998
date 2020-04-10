@@ -120,7 +120,7 @@ bool charFSM(char rChar)
     char c;
     while (1)
     {
-        if (UARTHasChar()) {
+        if (UART_has_char()) {
             c = read_uart_char();
             process_char(c);  // an FSM
      }
